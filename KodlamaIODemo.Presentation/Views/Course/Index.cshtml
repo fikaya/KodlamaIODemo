@@ -1,0 +1,29 @@
+﻿@using KodlamaIODemo.Entities.DTO.Course
+@model List<CourseInformationDTO>
+
+<div class="container">
+    <div class="row">
+        @foreach (var course in Model)
+        {
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="@course.ImagePath" alt="@course.Title">
+                    <div class="card-body">
+                        <h4 class="card-title">@course.Title</h4>
+                        <p class="card-text">@course.Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="@course.InstructorImagePath" alt="@course.InstructorFirstName @course.InstructorLastName" class="img-fluid rounded-circle" />
+                            </div>
+                            <div class="col-9 align-self-center">
+                                <span class="instructor-name">@course.InstructorFirstName @course.InstructorLastName</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

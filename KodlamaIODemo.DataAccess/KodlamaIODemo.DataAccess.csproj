@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KodlamaIODemo.Entities\KodlamaIODemo.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Concrete\CourseCategoryRepository\Dapper\" />
+    <Folder Include="Concrete\CourseCategoryRepository\EFCore\" />
+    <Folder Include="Concrete\CourseInstructorRepository\Dapper\" />
+    <Folder Include="Concrete\CourseInstructorRepository\EFCore\" />
+    <Folder Include="Concrete\InstructorRepository\Dapper\" />
+    <Folder Include="Concrete\InstructorRepository\EFCore\" />
+    <Folder Include="Concrete\CourseStudentRepository\Dapper\" />
+    <Folder Include="Concrete\CourseStudentRepository\EFCore\" />
+    <Folder Include="Concrete\CourseRepository\EFCore\" />
+    <Folder Include="Concrete\CategoryRepository\Dapper\" />
+    <Folder Include="Concrete\CategoryRepository\EFCore\" />
+    <Folder Include="Concrete\StudentRepository\Dapper\" />
+    <Folder Include="Concrete\StudentRepository\EFCore\" />
+  </ItemGroup>
+
+</Project>
